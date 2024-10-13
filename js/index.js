@@ -36,7 +36,7 @@ async function getWeather(countryName="cairo"){
     const response = await fetch(`https://api-bdc.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`);
     let locationData = await response.json();
     console.log(locationData.city);  
-    getWeather("locationData.city")
+    getWeather(locationData.city)
   }
   
 function getTodayData(data){
