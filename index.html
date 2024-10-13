@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- Bootstarp stylesheet -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="all min-vh-100 position-relative z-1">
+        <div class="overlay position-absolute start-0 top-0 w-100 h-100 z-n1"></div>
+    <header class="pt-5 text-white">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="title">
+                        <h1 class="display-2 fw-bold" id="country"></h1>
+                        <p class="fs-5"><span id="today-name">Monday</span>,
+                             <span id="today-date">31</span> 
+                             <span id="today-month">October</span>
+                             <span id="today-year">2020</span>  </p>
+                    </div>
+                </div>
+        <div class="col-lg-5">
+            <div class="search d-flex align-items-center justify-content-center">
+                <div class=" w-100">
+                    <input class="rounded-3 px-4 py-2 border-0 w-75 bg-opacity-25 bg-white" type="search" placeholder="Enter City Name" id="countryInput">
+                    <button class="rounded-3 p-2 px-3 border-0 shadow" type="button">Search</button>
+                </div>
+                <div class="location  p-2 px-3 rounded-3" id="locationBtn">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                </div>
+            </div>
+        </div>
+           </div>
+  </div>
+    </header>
+
+    <main class=" mt-5 text-white">
+        <div class="container px-5">
+            <div class="row d-flex px-sm-4">
+                <div class="col-lg-6">
+                    <div class="degree d-flex gap-2">
+                        <h2 class="display-1 fw-semibold pb-5" id="today-degree">15</h2>
+                        <div class="ps-2">
+                            <span class="fs-3"><sup>o</sup>C</span>  
+                            <p id="today-status" class="fs-2">Sunny</p> 
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="weather-info d-flex align-items-center justify-content-between gap-2">
+                    <div class="forecast-icon">
+                        <img src="" alt="" id="today-status-image">
+                    </div>
+                    <div class="content">
+                        <h5><i class="fa-solid fa-temperature-three-quarters pe-2 fs-4"></i> Feels Like: <span id="today-feels-like">31</span> <sup>o</sup>C</h5>
+                        <h5><i class="fa-solid fa-droplet pe-2 fs-4" ></i> Humidity: <span id="today-humidity">15 %</span></h5>
+                        <h5><i class="fa-solid fa-wind pe-2 fs-4" ></i> Wind: <span id="today-wind">14</span> km/h</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="mt-5 pb-2">
+        <div class="container  rounded-4 p-4 text-white shadow">
+            <div class="row row-gap-3">
+                <div class="col-md-4">
+                    <div class="tomorrow pt-2 shadow rounded d-flex align-items-center justify-content-center flex-column">
+                            <h6 class="next-day fs-3">Monday</h6>
+                            <div class="forecast-icon">
+                                <img src="" class="next-status-image">
+                            </div>
+                            <p class="fs-6 fw-semibold"><span class="next-max-degree fs-4 pe-1">23</span> <sup>o</sup>C - <span class="next-min-degree fs-4 pe-1">25</span><sup>o</sup>C </p>
+                            <p  class="fs-5 fw-semibold next-status">Cloudy</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="after-tomorrow pt-2 shadow d-flex align-items-center justify-content-center flex-column">
+                        <h6 class="next-day fs-3">Monday</h6>
+                        <div class="forecast-icon">
+                            <img src="" class="next-status-image">
+                        </div>
+                        <p class="fs-6 fw-semibold"><span class="next-max-degree fs-4 pe-1">23</span> <sup>o</sup>C - <span class="next-min-degree fs-4 pe-1">25</span><sup>o</sup>C </p>
+                        <p  class="fs-5 fw-semibold next-status">Cloudy</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="aftertwo-tomorrow pt-2 shadow d-flex align-items-center justify-content-center flex-column">
+                            <h6 class="next-day fs-3">Monday</h6>
+                            <div class="forecast-icon">
+                                <img src="" class="next-status-image">
+                            </div>
+                            <p class="fs-6 fw-semibold"><span class="next-max-degree fs-4 pe-1">23</span> <sup>o</sup>C - <span class="next-min-degree fs-4 pe-1">25</span><sup>o</sup>C </p>
+                            <p  class="fs-5 fw-semibold next-status">Cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
